@@ -1,9 +1,15 @@
 function Navbar() {
   return (
-    <header className="border-b border-zinc-800 bg-zinc-950 px-6 py-4">
-      <h1 className="text-2xl font-bold tracking-tight">
-        Quiz<span className="text-cyan-400">Master</span>
-      </h1>
+    <header className="lg:hidden flex justify-between items-center w-full px-margin-mobile py-unit shadow-sm bg-surface-container sticky top-0 z-40 border-b border-outline-variant">
+      <div className="font-headline-lg text-primary-fixed-dim">QuizMaster</div>
+      <div className="flex gap-unit">
+        <span className="material-symbols-outlined text-primary-fixed-dim">
+          notifications
+        </span>
+        <span className="material-symbols-outlined text-primary-fixed-dim">
+          account_circle
+        </span>
+      </div>
     </header>
   );
 }
