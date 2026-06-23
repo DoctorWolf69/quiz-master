@@ -1,5 +1,6 @@
 import StatsCards from "../components/StatsCards";
 import ChallengeCard from "../components/ChallengeCard";
+import RecentActivity from "../components/RecentActivity";
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function Home() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
         <StatsCards />
         <ChallengeCard />
+        <RecentActivity />
       </div>
     </>
   );
