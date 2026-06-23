@@ -40,7 +40,7 @@ function Badges() {
         {earned.map(({ icon, label, gradient, text, glow }) => (
           <div key={label} className="flex flex-col items-center gap-2">
             <div
-              className={`w-16 h-16 rounded-full bg-gradient-to-br ${gradient} flex items-center justify-center ${text} shadow-lg border-2 border-white/20 ${glow}`}
+              className={`w-16 h-16 rounded-full bg-linear-to-br ${gradient} flex items-center justify-center ${text} shadow-lg border-2 border-white/20 ${glow}`}
             >
               <span className="material-symbols-outlined text-[32px]">
                 {icon}
@@ -69,7 +69,7 @@ function Badges() {
 
       <div className="mt-margin-desktop">
         <div className="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden border border-white/5">
-          <div className="h-full bg-gradient-to-r from-primary-fixed-dim via-secondary-fixed-dim to-tertiary-fixed-dim w-1/4 neon-glow-primary"></div>
+          <div className="h-full bg-linear-to-r from-primary-fixed-dim via-secondary-fixed-dim to-tertiary-fixed-dim w-1/4 neon-glow-primary"></div>
         </div>
         <div className="mt-2 text-center font-label-caps text-[10px] text-on-surface-variant">
           Next badge at Level 15
