@@ -1,16 +1,41 @@
-# React + Vite
+# QuizMaster
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dark, neon-accented quiz dashboard built with React 19, Vite, and Tailwind CSS v4.
 
-Currently, two official plugins are available:
+![Stack](https://img.shields.io/badge/React-19-149eca) ![Vite](https://img.shields.io/badge/Vite-8-646cff) ![Tailwind](https://img.shields.io/badge/Tailwind-v4-38bdf8)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Responsive dashboard layout (desktop sidebar, mobile top/bottom nav)
+- Stats bento grid, daily challenge card, recent activity, and badges
+- Custom Tailwind v4 theme: glass cards, neon glows, and shimmer effects
+- Material Symbols icons and Google Fonts (Space Grotesk, Geist, JetBrains Mono)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting started
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev      # start the dev server
+npm run build    # production build
+npm run lint     # run ESLint
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project structure
+
+```
+src/
+  App.jsx                 # app shell: navs + main canvas
+  pages/Home.jsx          # dashboard page (bento grid)
+  components/
+    Sidebar.jsx           # desktop navigation
+    Navbar.jsx            # mobile top bar
+    BottomNav.jsx         # mobile bottom bar
+    StatsCards.jsx        # quizzes / score / rank
+    ChallengeCard.jsx     # challenge of the day
+    RecentActivity.jsx    # recent quiz list
+    Badges.jsx            # badge collection + progress
+  index.css               # Tailwind import + theme tokens + utilities
+```
+
+The design tokens (colors, fonts, spacing) and custom utilities live in
+[`src/index.css`](src/index.css) under the `@theme` block.
