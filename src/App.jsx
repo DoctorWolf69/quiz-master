@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import BottomNav from "./components/BottomNav";
 import Home from "./pages/Home";
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
           </div>
         </main>
       </div>
+
+      <BottomNav />
     </div>
   );
 }
