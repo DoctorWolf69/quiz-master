@@ -1,6 +1,7 @@
 import StatsCards from "../components/StatsCards";
 import ChallengeCard from "../components/ChallengeCard";
 import RecentActivity from "../components/RecentActivity";
+import Badges from "../components/Badges";
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
         <StatsCards />
         <ChallengeCard />
         <RecentActivity />
+        <Badges />
       </div>
     </>
   );
