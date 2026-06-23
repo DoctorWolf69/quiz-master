@@ -50,7 +50,7 @@ function Sidebar() {
       </div>
 
       <div className="mt-auto p-gutter">
-        <button className="w-full py-4 bg-primary-container text-on-primary-container rounded-xl font-bold flex items-center justify-center gap-2 active:scale-95 transition-all duration-200 neon-glow-primary">
+        <button className="w-full py-4 bg-primary-container text-on-primary-container rounded-xl font-bold flex items-center justify-center gap-2 active:scale-95 transition-all duration-200 neon-glow-primary hover:brightness-125">
           <span className="material-symbols-outlined">play_circle</span>
           Start Quiz
         </button>
