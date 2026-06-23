@@ -1,3 +1,5 @@
+import StatsCards from "../components/StatsCards";
+
 function Home() {
   return (
     <>
@@ -24,7 +26,9 @@ function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter"></div>
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <StatsCards />
+      </div>
     </>
   );
 }
