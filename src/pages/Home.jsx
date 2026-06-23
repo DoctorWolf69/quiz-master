@@ -1,18 +1,20 @@
 function Home() {
   return (
-    <section className="flex min-h-[calc(100vh-73px)] flex-col items-center justify-center px-6 text-center">
-      <h1 className="mb-4 text-6xl font-bold tracking-tight">
-        Quiz Master
-      </h1>
+    <>
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-margin-desktop gap-gutter">
+        <div>
+          <h1 className="font-headline-xl text-headline-xl-mobile lg:text-headline-xl text-on-surface">
+            Knowledge Center
+          </h1>
+          <p className="font-body-md text-on-surface-variant">
+            Ready to crush your daily goals,{" "}
+            <span className="text-primary-fixed-dim font-semibold">Alex?</span>
+          </p>
+        </div>
+      </div>
 
-      <p className="mb-10 max-w-xl text-zinc-400">
-        Test your knowledge across multiple categories and challenge yourself.
-      </p>
-
-      <button className="rounded-lg bg-cyan-400 px-6 py-3 font-semibold text-black">
-        Start Quiz
-      </button>
-    </section>
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter"></div>
+    </>
   );
 }
 
